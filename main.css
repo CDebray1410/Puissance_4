@@ -1,0 +1,90 @@
+main{
+    width: 80%;
+    margin: auto;
+}
+.title{
+    text-align: center;
+    margin: auto;
+}
+.board{
+    background-color: blue;
+    min-height: 50px;
+    margin: 20px auto;
+    z-index: 10;
+}
+#board{
+    background-color: blue;
+    min-height: 50px;
+    margin: 20px auto;
+    z-index: 10;
+}
+.row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 50px;
+    margin: 2px 5px;
+}
+.circle{
+    border-radius: 50%;
+    min-width: 90px;
+    min-height: 90px;
+    margin: 7px;
+    box-shadow: 0px 0px 2px 2px black;
+    background-color: white;
+    z-index: 100;
+}
+.empty{
+    background-color: white;
+}
+#playerTurnCounter{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 160px;
+    margin: 15px auto;
+    border-radius: 50%;
+    color: white;
+    font-weight: bold;
+    text-shadow: 2px 2px 0px black;
+}
+.turnCounter{
+    height: 60px;
+    text-align: center;
+    background-color: darkblue;
+    color: white;
+}
+
+.yoink{
+    animation-duration: .4s;
+    animation-name: slide;
+}
+
+@keyframes slide {
+    from {
+        transform: translateY(-700px);
+    }
+    to {
+        transform: translateY(0px);
+    }
+}
+
+#restart{
+    display: none;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    border-radius: 50%;
+    background-color: white;
+}
+#victoryCounter{
+    line-height: 30px;
+    padding: 20px;
+    max-height: 100px;
+    position: absolute;
+    top: 70px;
+    background-color: black;
+    color: white;
+}
