@@ -244,7 +244,7 @@ $(document).ready(function () {
         }
     }
     
-    let myGame = new Game("#my_board", "red", "red", 7, 6, "Christopher" , "Humain");
+    let myGame = new Game("#my_board");
     // constructor(container, player_one_color = "red", player_two_color = "yellow", lengthX = 7, lengthY = 6, playerOne = "Player 1" , playerTwo = "Player 2")
     $('#restart').click(function () {
         myGame.restart();
