@@ -22,9 +22,12 @@ Jeu de puissance 4
         - horizontal
         - vertical 
         - diagonale
+        - anti-diagonale
         
     - S’il n’y a plus de case de la grille disponible la partie est déclarée nulle
-    - En cas de relance de partie ( via le bouton restart ) le compteur de victoire des joueurs (ou du match nul) s'incrémentera et conservera les résultat des                    partie
+    - En cas de relance de partie ( via le bouton restart ) : 
+        - La grille sera vidée et le compteur de tour sera remis à 0 .
+        - Le compteur de victoire des joueurs (ou du match nul) s'incrémentera et conservera les résultat des matchs précédents
 
 ## 3) Utilisation
 
@@ -38,7 +41,5 @@ Dans l'instanciation de la class qui est déjà présente ici (ligne 247 : let m
         - 6ème = nom du joueur 1
         - 7ème = nom pion du joueur 2
         
-        constructor(container, player_one_color = "red", player_two_color = "yellow", lengthX = 7, lengthY = 6, playerOne = "Player 1" , playerTwo = "Player 2")
-
 ## 4) Prérequis
 JQuery.
